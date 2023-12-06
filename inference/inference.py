@@ -52,7 +52,7 @@ def main(
     # else:
     #     print("No user prompt provided. Exiting.")
     #     sys.exit(1)
-    hf_token="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"
+    hf_token = "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"
     raw_test_dataset = load_dataset("json", data_files="/root/summarization/test.jsonl")['train']
     tokenizer = LlamaTokenizer.from_pretrained("meta-llama/Llama-2-13b-chat-hf",token=hf_token)
     tokenizer.add_special_tokens(
